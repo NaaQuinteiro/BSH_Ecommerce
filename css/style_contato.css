@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Satisfy&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contate-nos{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(../img/fundo-cont.png);
+    background-size: cover;
+}
+
+.contate-nos .titulo_produtos{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contate-nos .titulo_produtos h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.container-contato{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-right: 200px ;
+    margin-top: 30px;
+}
+
+.formulario-contato{
+    width: 40%;
+    padding: 40px;
+    background-color: #fff;
+    -webkit-filter: drop-shadow(10px 10px 10px rgba(0 0 0 / 60%)); 
+        filter: drop-shadow(10px 10px 10px rgba(0 0 0 / 60%));
+}
+
+.formulario-contato h2 {
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+
+}
+
+.formulario-contato .input-caixa{
+    position:relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.input-caixa input, textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #24268b;
+    outline: none;
+    resize: none;
+}
+
+.formulario-contato .input-caixa span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #24268b;
+}
+
+ .input-caixa input:focus ~ span, input:valid ~ span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+ .input-caixa textarea:focus ~ span, textarea:valid ~ span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+    }
+
+.input-caixa input[type="submit"]{
+    width: 100px;
+    background: #24268b;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media (max-width: 991px){
+    .contate-nos{
+        padding: 50px;
+    }
+    .container-contato{
+        flex-direction: column;
+    }
+    .container-contato .InfoContato, .formulario-contato{
+        width: 100%;
+    }
+}

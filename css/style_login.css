@@ -1,0 +1,146 @@
+
+/* importanto as fontes de letras do google fonts, fonte Outfit, Roboto Condensed e Satisfy */
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap');
+
+/* CSS RESET */
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+.login_page {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(../img/Login_fundo.png);
+    background-size: cover;
+}
+
+.login_page .welcome-back{
+    max-width: 800px;
+    text-align: center;
+}
+
+
+.container-login{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* padding-left: 200px; */
+    margin-top: 20px;
+}
+
+.formulario-login{
+    width: 440px;
+    padding: 40px;
+    background-color: #291070;
+    border-radius: 20px;
+    -webkit-filter: drop-shadow(10px 10px 10px rgba(0 0 0 / 60%)); 
+        filter: drop-shadow(10px 10px 10px rgba(0 0 0 / 60%));
+}
+
+.formulario-login h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+
+}
+
+.input-caixa{
+    width: 100%;
+    margin-top: 10px;
+}
+.input-caixa:hover, .input-botao:hover{
+    transition: all 0.s ease;   
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(0 0 0 / 60%)); 
+        filter: drop-shadow(5px 5px 5px rgba(0 0 0 / 60%));  
+}
+.input-caixa input{
+    width: 100%;
+    height: 47px;
+    padding: 8px 8px;
+    font-size: 18px;
+    margin: 10px 0;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.input-caixa label{ 
+    padding: 0 20px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.input-botao{
+    text-align: center;
+    outline: none;
+    resize: none;
+}
+
+.input-botao input[type="button"]{
+    border: none;
+    width: 150px;
+    border-radius: 20px;
+    background:  #F5F5F5;
+    color: #24268b;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold; 
+}
+
+.fazer-cadastro{
+    text-align: center;
+    padding: 10px;
+}
+
+.fazer-cadastro a{
+    color: #fff;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.welcome-back{
+    display: flex;
+    align-items: center;
+    /* padding-left: 101px; */
+    
+}
+.welcome-back a{
+    text-align: left;
+    font-size: 70px;
+    text-decoration: none;
+    color:#24268b;
+    font-family:'Lobster', cursive;
+    font-weight: bold;
+
+}
+
+/* responsividade da página de login */
+@media (max-width: 991px){
+    .login_page{
+        padding: 50px;
+    }
+    .container-login{
+        flex-direction: column;
+    }
+    .container-login, .formulario-login{
+        width: 100%;
+    }
+}

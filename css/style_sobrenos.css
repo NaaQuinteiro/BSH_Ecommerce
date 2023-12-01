@@ -1,0 +1,57 @@
+/* importanto as fontes de letras do google fonts, fonte Outfit e Satisfy */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Satisfy&display=swap');
+
+/* CSS RESET */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+.titulo_sobrenos, .titulo_produtos  {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+
+}
+
+.titulo_sobrenos, .titulo_produtos h2 {
+    font-size: 20px;
+}
+
+.historia, .missao, .valores, .visao {
+    display: flex;
+    justify-content: center;
+}
+
+.missao, .valores, .visao {
+    padding-top: 2rem;
+}
+
+.historia_img, .missao_img, .valores_img, .visao_img {
+    width: 450px;
+    height:300px;
+}
+.historia img, .missao img, .valores img, .visao img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    -webkit-filter: drop-shadow(10px 10px 10px rgba(0 0 0 / 60%)); 
+        filter: drop-shadow(10px 10px 10px rgba(0 0 0 / 60%));
+}
+.text_sobrenos {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    padding: 5rem;
+}
+
+.text_sobrenos p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.visao {
+    padding-bottom: 10rem;
+}

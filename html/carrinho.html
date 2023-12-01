@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Thayná Quinteiro">
+    <title>BSH CARRINHO</title>
+   <link rel="stylesheet" href="../css/style.css">
+   <link rel="stylesheet" href="../css/style_carrinho.css">
+   <link rel="stylesheet" href="../css/style_sobrenos.css">
+   <link rel="stylesheet" href="../css/style_adress.css">
+   <script src="https://kit.fontawesome.com/be07557a2e.js" crossorigin="anonymous"></script>
+   <script src="../Js/carrinho.js" type="module" defer></script>
+</head>
+
+<body>
+
+    <!-- Inicío do cabeçalho -->
+    <header>
+        <nav> 
+            <div class="nav-bar">
+    <!--Logo marca-->
+                <div class="logo">
+                   <a href="home.html"><img src="/img/bsh_logo_png.png" 
+                    alt="Logo Marca"></a> 
+                </div>
+    <!--Barra de pesquisa-->
+                <div class="barra_pesquisa"> 
+                    <input type="text" class="text_buscar" placeholder="Busque aqui...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+    <!--Barra de navegação-->
+                <div class="nav_itens">
+                    <div class="home">
+                        <a href="home.html"> Home </a>
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+                    
+                    <div class="contato">
+                        <a href="contato.html"> Contato </a>
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+
+                    <div class="carrinho">
+                        <a href="carrinho.html"> Carrinho </a>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+
+                    <div class="login">
+                        <a href="login.html"> Login </a>
+                        <i class="fa-solid fa-circle-user"></i>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- fim do cabeçalho -->
+
+
+    <!-- Inicío do conteúdo principal -->
+    <main>
+        <!-- Título da página -->
+        <div class="titulo_produtos">
+            <h2>MEU CARRINHO</h2>
+        </div>
+
+        <!-- inicio do carrinho -->
+        <div class="produtinhos">
+            <div class="container_card">
+                <div class="inf-card-product"><p>Produto</p></div>
+                <div class="inf-card-value"><p>Preço</p></div>
+                <div class="inf-card-quant"> <p>Quantidade</p></div>
+                
+                <!-- <div class="borda_card">
+
+                    <div class="caixinha-check">
+                        <input class="chk" type="checkbox" name="" id="check" />
+                    </div>
+
+                    <div class="img_card">
+                        <img src="../img/martelo01.PNG" alt="Alicates">
+                    </div>
+    
+                    <div class="text_product">
+                        <p>Martelo Unha Aço com cabo de madeira</p>
+                    </div>
+    
+                    <div class="text_preco">
+                        <p>R$ 40,00</p>
+                    </div>
+    
+                    <div class="quant">
+                        <div class="menos">
+                            <i class="fa-solid fa-minus"></i>
+                        </div>
+                        <span>1</span>
+                        <div class="mais">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+    
+                    <div class="trash">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+    
+                </div>
+
+                <div class="borda_card">
+
+                    <div class="caixinha-check">
+                        <input class="chk" type="checkbox" name="" id="check" />
+                    </div>
+
+                    <div class="img_card">
+                        <img src="../img/kit_chaves.PNG" alt="Alicates">
+                    </div>
+    
+                    <div class="text_product">
+                        <p>Kit Chaves de Fenda e Phileps</p>
+                    </div>
+    
+                    <div class="text_preco">
+                        <p>R$ 59,98</p>
+                    </div>
+    
+                    <div class="quant">
+                        <div class="menos">
+                            <i class="fa-solid fa-minus"></i>
+                        </div>
+                        <span>1</span>
+                        <div class="mais">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+    
+                    <div class="trash">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+    
+                </div>
+
+                <div class="borda_card">
+
+                    <div class="caixinha-check">
+                        <input class="chk" type="checkbox" name="" id="check" />
+                    </div>
+
+                    <div class="img_card">
+                        <img src="../img/kit_alicates01.PNG" alt="Alicates">
+                    </div>
+    
+                    <div class="text_product">
+                        <p>Conjunto de alicates de 7 peças</p>
+                    </div>
+    
+                    <div class="text_preco">
+                        <p>R$ 182,80</p>
+                    </div>
+    
+                    <div class="quant">
+                        <div class="menos">
+                            <i class="fa-solid fa-minus"></i>
+                        </div>
+                        <span>1</span>
+                        <div class="mais">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+    
+                    <div class="trash">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+    
+                </div> -->
+            </div>
+                <div class="container-subt">
+                    <div class="text-subtotal">
+                        <p>Subtotal:</p>
+                    </div>
+
+                    <div class="text-value-sub">
+                        <p>R$ 282,78</p>
+                    </div>
+
+                    <div class="text-quant-sub">
+                        <p>3</p>
+                    </div>
+                </div>
+
+                <div class="border-total">
+                    <div class="text-total">
+                        <div class="text-01">
+                            <p>TOTAL:</p>
+                        </div>
+                            <p><b>R$ 282,78</b></p>
+                    </div>
+                </div>
+
+                <div class="continue">
+                    <button>Finalizar</button>
+                </div> 
+                
+        </div>
+
+        <section class="endereco-page">
+            <div class="titulo_produtos">
+                <h2>ENDEREÇO DE ENTREGA</h2>
+            </div>
+
+            <div class="container-endereco">
+
+                <div class="formulario-endereco">
+                    <!-- inicio do formulário de endereço -->
+                    <form>
+                        <!-- Inicio dos inputs do usuário para preencher os campos a seguir com seus dados-->
+                        <div class="auxiliar">
+                            <div class="input-conteudo6">
+                                <label for="Endereço">Endereço</label>
+                                <input type="text" name="endereco" required="required" id ="adress">
+                            </div>
+                    
+                            <div class="input-conteudo5">
+                                <label for="numero">N°</label>
+                                <input type="number" name="numero" required="required" id ="number">
+                            </div> 
+                        </div>
+                        
+                        
+                        <div class="auxiliar">
+                            <div class="input-conteudo4">
+                                <label for="cep">CEP</label>
+                                <input type="text" name="CEP" required="required" id ="CEP">
+                            </div>
+        
+                            <div class="input-conteudo3">
+                                <label for="complement">Complemento</label>
+                                <input type="text" name="complement" required="required" id ="Complemento">
+                            </div> 
+                        </div>
+
+                        <div class="auxiliar">
+                            <div class="input-conteudo2">
+                                <label for="bairro">Bairro</label>
+                                <input type="text" name="Bairro" required="required" id="bairro">
+        
+                                <label for="cidade">Cidade</label>
+                                <input type="text" name="Cidade" required="required" id="Cidade">
+                            </div> 
+                        </div>
+
+                        <div class="auxiliar">
+                            <div class="input-conteudo1">
+                                <label for="estado">Estado</label>
+                            <select name="estados" id="Estados">
+                                <option value="acre">Acre</option>
+                                <option value="alagoas">Alagoas</option>
+                                <option value="amapa">Amapá</option>
+                                <option value="amazonas">Amazonas</option>
+                                <option value="bahia">Bahia</option>
+                                <option value="ceara">Ceará</option>
+                                <option value="esp.sant">Espiríto Santo</option>
+                                <option value="goias">Goiás</option>
+                                <option value="maranhao">Maranhão</option>
+                                <option value="mato grosso">Mato Grosso</option>
+                                <option value="minas gerais">Minas Gerais</option>
+                                <option value="para">Pará</option>
+                                <option value="paraiba">Paraíba</option>
+                                <option value="parana">Paraná</option>
+                                <option value="pernanbuco">Pernambuco</option>
+                                <option value="piaui">Piauí</option>
+                                <option value="rio de janeiro">Rio de Janeiro</option>
+                                <option value="rio grande do norte">Rio Grande do Norte</option>
+                                <option value="rio grande do sul">Rio Grande do Sul</option>
+                                <option value="rondonia">Rondoônia</option>
+                                <option value="roraima">Roraima</option>
+                                <option value="santa catarina">Santa Catarina</option>
+                                <option value="sao paulo">São Paulo</option>
+                                <option value="sergipe">Sergipe</option>
+                                <option value="tocantins">Tocantins</option>
+                                <option value="distrito federal">Distrito Federal</option>
+                            </select>
+                            
+                            <label for="pais">País</label>
+                            <input type="text" name="Pais" required="required" id="País">
+        
+                            <label for="tel">Telefone</label>
+                            <input type="tel" name="Telefone" required="required" id="phone">
+        
+                            </div> 
+                        </div>
+                        
+
+                        <!-- <div class="input-button">
+                            <input type="button" name="seguir" value="Salvar e Continuar">
+                        </div>  -->
+
+                    </form>
+                    <!-- fim do formulário de endereço -->
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <!-- fim do cointeúdo principal -->
+
+    <!--Início do rodapé--> 
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="logo-footer">
+                    <img src="/img/logo_rodape.png" alt="Logo rodapé">
+                </div>
+               
+
+                <div class="footer-col">
+                    <h4>Nossos Serviços</h4>
+                    <ul>
+                        <li><a href="home.html"> Home </a></li>
+                        <li><a href="contato.html"> Contato </a></li>
+                        <li><a href="carrinho.html"> Carrinho </a></li>
+                        <li><a href="sobre_nos.html"> Sobre nós </a></li>
+                        <li><a href="categorias.html"> Categorias </a></li>
+                        <li><a href="produtos.html"> Produtos </a></li>
+                        
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Siga-nos</h4>
+                    <div class="social-links">
+                        <ul>
+                            <li><i class="fa-brands fa-linkedin-in"></i> BSH Company</li>
+                            <li><i class="fa-brands fa-instagram"></i> @bsh_ferramentas</li>
+                            <li><i class="fa-brands fa-whatsapp"></i> +55 (19) 99714-2121</li>
+                            <li> </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Endereço</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i> Rua Pastor Cicero Canuto de Lima, 71 
+                            São Bernardo - Vila Rialto, Campinas - SP, 13036-210</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="frase">
+            <p>Ajudando na construção de novas histórias!</p>
+        </div>
+    </footer>
+    <div class="ident-chique">
+        <p>©quinteiro_2023</p>
+    </div>
+    </body>
+</html>
